@@ -53,5 +53,4 @@ class Usuario(db.Model, UserMixin):
         .all()
     )
 
-        print(top_10)
         return top_10

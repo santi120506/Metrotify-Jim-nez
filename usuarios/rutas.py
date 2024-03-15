@@ -46,7 +46,6 @@ def crear_usuario():
 
     db.session.add(nuevo_usuario)
     db.session.commit()
-    print("hola!")
     login_user(nuevo_usuario, remember=True) # Iniciar sesión para el nuevo usuario permitiendole acceder a rutas protegidas.
 
     return "Usuario creado con exito.", 200
