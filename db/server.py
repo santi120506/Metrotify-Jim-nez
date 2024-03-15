@@ -10,7 +10,7 @@ BD_NOMBRE = "base_de_datos.db"
 def create_app():
     """Función para configurar el servidor y la base de datos. Retorna una aplicación lista para ejecutar."""
     app = Flask(__name__)
-    app.config["SECRET_KEY"] = "ESTO SE CAMBIA DESPUES"
+    app.config["SECRET_KEY"] = "alkhaksjdfhj"
     app.config["SQLALCHEMY_DATABASE_URI"] = f"sqlite:///{BD_NOMBRE}"
     base_de_datos.init_app(app)
 
